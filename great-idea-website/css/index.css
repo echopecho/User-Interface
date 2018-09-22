@@ -64,3 +64,122 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+body {
+	width: 876px;
+	margin: 0 auto;
+}
+
+.nav-container {
+	/* width: 100%; */
+	/* position: fixed; */
+	/* top: 0px; */
+	/* left: 0px; */
+}
+
+.nav-container header {
+	width: 900px;
+	position: fixed;
+	top: 0px;
+	margin: 0 auto;
+	height: 50px;
+	background: white;
+}
+
+.nav-container header img {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+
+.nav-container nav {
+	display: inline-block;
+}
+
+.nav-container nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: lightgray;
+	margin: 20px 80px 30px 0;
+	font-size: 12px;
+}
+
+.nav-container nav a:hover {
+	color: dodgerblue;
+	animation: drop 0.5s linear;
+}
+
+.nav-container section {
+	margin-top: 70px;
+	padding-bottom: 70px;
+	border-bottom: 1px solid black;
+}
+
+.get-started {
+	display: inline-block;
+	height: 380px;
+	width: 50%;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 65px;
+}
+
+.get-started h1 {
+	display: inline-block;
+	font-size: 65px;
+}
+
+.get-started button {
+	background: none;
+	border: 1px solid black;
+	width: 134px;
+	height: 28px;
+}
+
+.get-started button:hover {
+	background-color: dodgerblue;
+	animation: pulse 0.5s alternate infinite linear;
+}
+
+.container {
+	border-bottom: 1px solid black;
+}
+
+.container h2 {
+	font-size: 20px;
+}
+
+ .container .top {
+	 display: inline-block;
+	 width: 434px;
+	 margin: 40px 0;
+ }
+
+ .container .bottom {
+	 display: inline-block;
+	 width: 288px;
+	 margin: 40px 0;
+ }
+
+ .contact {
+	 margin: 40px 0;
+ }
+
+ .contact p {
+	 margin: 20px 0;
+ }
+
+ footer {
+	 text-align: center;
+	 font-size: 14px;
+ }
+
+@keyframes pulse {
+	from { transform: scale(1); }
+	to { transform: scale(1.2); }
+}
+
+@keyframes drop {
+	from { transform: translateY(0); }
+	to { transform: translateY(20px); }
+}
